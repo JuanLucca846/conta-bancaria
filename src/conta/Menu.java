@@ -2,11 +2,20 @@ package conta;
 
 import java.util.Scanner;
 
+import conta.model.Conta;
 import conta.util.Cores;
 
 public class Menu {
 
 	public static void main(String[] args) {
+
+		Conta conta1 = new Conta(123456, 123, 1, "Maria dos Santos", 2500.00f);
+
+		conta1.visualizar();
+		conta1.sacar(12000.0f);
+		conta1.visualizar();
+		conta1.depositar(5000.0f);
+		conta1.visualizar();
 
 		Scanner scanner = new Scanner(System.in);
 		int opcao;
