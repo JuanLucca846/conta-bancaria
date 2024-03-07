@@ -1,6 +1,6 @@
 package conta.model;
 
-public class Conta {
+public abstract class Conta {
 
 	// Encapsulamento: encapsular
 	// Private / Protected / Public / Friendly
@@ -19,6 +19,20 @@ public class Conta {
 
 		// this é o mais usado
 		numero = numeroConta;
+		this.agencia = agencia;
+		this.tipo = tipo;
+		this.titular = titular;
+		this.saldo = saldo;
+
+		// setter - atualiza os dados
+		// getter - busca os dados
+
+	}
+
+	public Conta(int agencia, int tipo, String titular, float saldo) {
+
+		// this é o mais usado
+		this.numero = +1;
 		this.agencia = agencia;
 		this.tipo = tipo;
 		this.titular = titular;
